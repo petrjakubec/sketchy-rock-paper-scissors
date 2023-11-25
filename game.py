@@ -1,5 +1,7 @@
 import random
 
+VERSION = "2.1"
+
 rolls = {
     'rock': {
         'defeats': ['scissors', 'lizard'],
@@ -25,6 +27,7 @@ rolls = {
 
 
 def main():
+    print(f"App starting up, v{VERSION}")
     show_header()
     play_game("You", "Computer")
 
